@@ -49,6 +49,7 @@ class Frame
 public:
     Frame();
 
+    
     // Copy constructor.
     Frame(const Frame &frame);
 
@@ -97,6 +98,9 @@ public:
     void ComputeStereoMatches();
 
     // Associate a "right" coordinate to a keypoint if there is valid depth in the depthmap.
+
+
+
     void ComputeStereoFromRGBD(const cv::Mat &imDepth);
 
     // Backprojects a keypoint (if stereo/depth info available) into 3D world coordinates.
